@@ -2,13 +2,29 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item
-        android:id="@+id/page_1"
+        android:id="@+id/coinListingScreen"
         android:enabled="true"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@drawable/ic_explore_24"
         android:title="Coins" />
     <item
-        android:id="@+id/page_2"
+        android:id="@+id/exchangeScreen"
         android:enabled="true"
-        android:icon="@drawable/ic_launcher_foreground"
+        android:icon="@drawable/ic_baseline_currency_exchange_24"
+        android:title="Exchanges" />
+    <item
+        android:id="@+id/searchScreen"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_search_24"
+        android:title="Search" />
+    <item
+        android:id="@+id/favouriteScreen"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_favorite_24"
         android:title="Favourite" />
+    <item
+        android:id="@+id/accountScreen"
+        android:enabled="true"
+        android:icon="@drawable/ic_person_24"
+        android:title="Account" />
+
 </menu>

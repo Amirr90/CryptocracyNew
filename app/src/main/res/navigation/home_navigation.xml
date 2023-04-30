@@ -8,6 +8,26 @@
     <fragment
         android:id="@+id/coinListingScreen"
         android:name="com.e.cryptocracy.home.ui.fragments.CoinListingScreen"
-        android:label="fragment_coin_listing_screen"
+        android:label="Coins"
         tools:layout="@layout/fragment_coin_listing_screen" />
+    <fragment
+        android:id="@+id/accountScreen"
+        android:name="com.e.cryptocracy.home.ui.fragments.AccountScreen"
+        android:label="Account"
+        tools:layout="@layout/fragment_account_screen" />
+    <fragment
+        android:id="@+id/favouriteScreen"
+        android:name="com.e.cryptocracy.home.ui.fragments.FavouriteScreen"
+        android:label="Favourite"
+        tools:layout="@layout/fragment_favourite_screen" />
+    <fragment
+        android:id="@+id/exchangeScreen"
+        android:name="com.e.cryptocracy.home.ui.fragments.ExchangeScreen"
+        android:label="Exchange"
+        tools:layout="@layout/fragment_exchange_screen" />
+    <fragment
+        android:id="@+id/searchScreen"
+        android:name="com.e.cryptocracy.home.ui.fragments.SearchScreen"
+        android:label="Search"
+        tools:layout="@layout/fragment_search_screen" />
 </navigation>

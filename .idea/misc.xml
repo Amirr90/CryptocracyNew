@@ -7,7 +7,14 @@
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/CyrptocracyNew/app/src/main/res/layout/activity_main.xml" value="0.14907407407407408" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/CyrptocracyNew/app/src/main/res/layout/fragment_coin_listing_screen.xml" value="0.1759023894255211" />
         <entry key="..\:/Users/LENOVO/AndroidStudioProjects/CyrptocracyNew/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.1759023894255211" />
+        <entry key="..\:/Users/cedcoss/StudioProjects/CryptocracyNew/app/src/main/res/drawable-v24/ic_explore_24.xml" value="0.127" />
+        <entry key="..\:/Users/cedcoss/StudioProjects/CryptocracyNew/app/src/main/res/drawable-v24/ic_person_24.xml" value="0.127" />
+        <entry key="..\:/Users/cedcoss/StudioProjects/CryptocracyNew/app/src/main/res/font/armata.xml" value="0.2338586680223691" />
+        <entry key="..\:/Users/cedcoss/StudioProjects/CryptocracyNew/app/src/main/res/layout/activity_home.xml" value="0.19375" />
+        <entry key="..\:/Users/cedcoss/StudioProjects/CryptocracyNew/app/src/main/res/layout/fragment_coin_listing_screen.xml" value="0.19375" />
+        <entry key="..\:/Users/cedcoss/StudioProjects/CryptocracyNew/app/src/main/res/menu/bottom_navigation_menu.xml" value="0.19375" />
       </map>
     </option>
   </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="11" project-jdk-type="JavaSDK" />
 </project>
