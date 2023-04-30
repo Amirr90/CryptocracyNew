@@ -1,0 +1,73 @@
+{
+  "project_info": {
+    "project_number": "394986695277",
+    "firebase_url": "https://paisa-1ec1c.firebaseio.com",
+    "project_id": "paisa-1ec1c",
+    "storage_bucket": "paisa-1ec1c.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:394986695277:android:25ae8dfa0f5812bd1c6d64",
+        "android_client_info": {
+          "package_name": "com.e.cryptocracy"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "394986695277-0n31nflc3idiifdp5tahh50sjs0ifogu.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.e.cryptocracy",
+            "certificate_hash": "e9d15d401b5bc3681ccc0d79054cab5d0756a5b2"
+          }
+        },
+        {
+          "client_id": "394986695277-43rh46lqldslj0ik6l7939eiju0v6vni.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.e.cryptocracy",
+            "certificate_hash": "d5442f9938db4c279fdf6fefaa644aeabec8da52"
+          }
+        },
+        {
+          "client_id": "394986695277-depvcnme0i1uf41btguhn5r6nul6t286.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.e.cryptocracy",
+            "certificate_hash": "b8bd74315ae1bbe5466dbf109d989f90a93ee740"
+          }
+        },
+        {
+          "client_id": "394986695277-gggo37r0ne27arl64pk2lrtp268gj3nf.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.e.cryptocracy",
+            "certificate_hash": "df9aa309f07af4fec50467b37e83d5651e1cdafa"
+          }
+        },
+        {
+          "client_id": "394986695277-n1jniq9j933mvhl8i7fb15p3h7sl0eh7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCGlnssmz4ZaeDS-3W50w6qVzuOI_rVNVg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "394986695277-n1jniq9j933mvhl8i7fb15p3h7sl0eh7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      },
+      "admob_app_id": "ca-app-pub-5778282166425967~4351577276"
+    }
+  ],
+  "configuration_version": "1"
+}
