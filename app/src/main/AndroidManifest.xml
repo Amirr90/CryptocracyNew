@@ -2,6 +2,8 @@
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools">
 
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:name=".auth.App"
         android:allowBackup="true"
@@ -14,8 +16,12 @@
         android:theme="@style/Theme.CyrptocracyNew"
         tools:targetApi="31">
         <activity
-            android:name=".home.ui.HomeActivity"
+            android:name=".DemoActivity"
             android:exported="false" />
+        <activity
+            android:name=".home.ui.HomeActivity"
+            android:exported="false"
+            android:theme="@style/Theme.CyrptocracyNewNoToolbar" />
         <activity
             android:name=".StartActivity"
             android:exported="true"

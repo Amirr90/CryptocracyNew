@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mainView"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="0.5dp"
+    android:background="?attr/selectableItemBackground"
+    android:clickable="true"
+    android:paddingHorizontal="10dp"
+    android:paddingVertical="16dp">
+
+
+    <ImageView
+        android:id="@+id/ivAccountIcon"
+        android:layout_width="22dp"
+        android:layout_height="22dp"
+        app:drawableTint="@color/black"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_baseline_notifications_active_24" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:text="TextView"
+        android:textAppearance="@style/TextAppearance.AppCompat.Medium"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:fontFamily="@font/armata"
+        app:layout_constraintBottom_toBottomOf="@+id/ivAccountIcon"
+        app:layout_constraintEnd_toStartOf="@+id/favoriteImageView"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toEndOf="@+id/ivAccountIcon"
+        app:layout_constraintTop_toTopOf="@+id/ivAccountIcon" />
+
+    <ImageView
+        android:id="@+id/favoriteImageView"
+        android:layout_width="22dp"
+        android:layout_height="20dp"
+        android:layout_marginEnd="4dp"
+        android:src="@drawable/ic_baseline_keyboard_double_arrow_right_24"
+        app:layout_constraintBottom_toBottomOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/textView5"
+        app:tint="@color/black" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
+

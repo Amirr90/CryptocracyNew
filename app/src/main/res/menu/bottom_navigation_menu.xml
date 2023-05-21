@@ -5,21 +5,21 @@
         android:id="@+id/coinListingScreen"
         android:enabled="true"
         android:icon="@drawable/ic_explore_24"
-        android:title="Coins" />
+        android:title="Market" />
     <item
         android:id="@+id/exchangeScreen"
         android:enabled="true"
         android:icon="@drawable/ic_baseline_currency_exchange_24"
-        android:title="Exchanges" />
+        android:title="Exchange" />
     <item
         android:id="@+id/searchScreen"
         android:enabled="true"
-        android:icon="@drawable/ic_baseline_search_24"
+        android:icon="@drawable/search_icon"
         android:title="Search" />
     <item
         android:id="@+id/favouriteScreen"
         android:enabled="true"
-        android:icon="@drawable/ic_baseline_favorite_24"
+        android:icon="@drawable/star_icon"
         android:title="Favourite" />
     <item
         android:id="@+id/accountScreen"

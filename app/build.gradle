@@ -5,6 +5,7 @@ plugins {
     id 'kotlin-kapt'
     id 'kotlin-parcelize'
     id 'androidx.navigation.safeargs'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -49,6 +50,7 @@ dependencies {
     implementation 'com.google.firebase:firebase-firestore:24.5.0'
     implementation 'androidx.navigation:navigation-fragment-ktx:2.5.3'
     implementation 'androidx.navigation:navigation-ui-ktx:2.5.3'
+    implementation 'com.google.firebase:firebase-firestore-ktx:24.6.0'
     testImplementation 'junit:junit:4.13.2'
     androidTestImplementation 'androidx.test.ext:junit:1.1.5'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.5.1'
@@ -100,4 +102,16 @@ dependencies {
     def nav_version = "2.5.3"
     implementation("androidx.navigation:navigation-fragment-ktx:$nav_version")
     implementation("androidx.navigation:navigation-ui-ktx:$nav_version")
+
+    // Facebook shimmer (loading state)
+    implementation 'com.facebook.shimmer:shimmer:0.5.0'
+
+
+    //HighChart
+    implementation 'com.github.highcharts:highcharts-android:10.2.0'
+
+
+    //sparkView
+    implementation 'com.robinhood.spark:spark:1.2.0'
+
 }

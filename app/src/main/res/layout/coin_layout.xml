@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <import type="android.R" />
+
+        <import type="android.graphics.Color" />
+
+        <variable
+            name="currencyLogo"
+            type="String" />
+
+        <variable
+            name="coin"
+            type="com.e.cryptocracy.home.models.Coin" />
+    </data>
+
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/card"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:strokeColor="@color/black">
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginHorizontal="8dp"
+            android:layout_marginVertical="10dp">
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_begin="34dp" />
+
+            <LinearLayout
+                android:id="@+id/linearLayout"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toStartOf="@+id/coinChangeLayout"
+                app:layout_constraintStart_toStartOf="@+id/guideline2"
+                app:layout_constraintTop_toTopOf="@+id/shapeableImageView">
+
+
+                <TextView
+
+                    android:id="@+id/textView5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:text="@{currencyLogo+coin.price,default=`120.00`}"
+                    android:textAlignment="textEnd"
+                    android:textColor="@color/black"
+                    android:textSize="14sp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:textColor="@color/default_text_color"
+
+                    android:id="@+id/tvBtcPrice"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="24dp"
+                    android:drawableEnd="@drawable/ic_baseline_currency_bitcoin_20"
+                    android:text="@{``+coin.btcPrice,default=`120.00`}"
+                    android:textAlignment="textEnd"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+
+            <androidx.constraintlayout.widget.Guideline
+                android:id="@+id/guideline2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintGuide_percent="0.39" />
+
+            <TextView
+                android:id="@+id/textView2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="10dp"
+                android:text="@{coin.symbol,default=`Bitcoin`}"
+                android:textColor="@color/black"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                app:layout_constraintBottom_toTopOf="@+id/coinPrice"
+                app:layout_constraintStart_toEndOf="@+id/shapeableImageView"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:textColor="@color/default_text_color"
+
+                android:id="@+id/coinPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="4dp"
+                android:text="@{coin.marketCap,default=`120 Bn`}"
+                android:textSize="11sp"
+                app:layout_constraintStart_toStartOf="@+id/textView2"
+                app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+
+            <LinearLayout
+                android:id="@+id/coinChangeLayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent">
+
+                <com.robinhood.spark.SparkView
+                    android:id="@+id/sparkview"
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"
+                    android:layout_marginBottom="3dp"
+                    app:spark_animateChanges="true"
+                    app:spark_baseLineColor="@color/green_text"
+                    app:spark_baseLineWidth="2dp"
+                    app:spark_fill="true" />
+
+                <TextView
+                    android:id="@+id/coinChange"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:background="@drawable/round_12dp_green"
+                    android:drawableLeft="@drawable/ic_baseline_arrow_drop_down_24"
+                    android:gravity="center_vertical"
+                    android:paddingHorizontal="3dp"
+                    android:paddingVertical="0dp"
+                    android:text="@{` `+coin.change+`%`,default=` -4.6`}"
+                    android:textSize="10sp" />
+            </LinearLayout>
+
+
+            <View
+                android:id="@+id/view"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:background="@drawable/outline_border_1dp"
+                app:layout_constraintBottom_toBottomOf="@+id/coinPrice"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <com.google.android.material.imageview.ShapeableImageView
+                android:id="@+id/shapeableImageView"
+                loadImage="@{coin.image}"
+                android:layout_width="25dp"
+                android:layout_height="0dp"
+                android:src="@drawable/ic_launcher_foreground"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintStart_toStartOf="@+id/guideline3"
+                app:layout_constraintTop_toTopOf="@+id/view"
+                app:shapeAppearanceOverlay="@style/ShapeAppearanceOverlay.App.CornerRound" />
+
+            <TextView
+                android:id="@+id/textView4"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="4dp"
+                android:layout_marginEnd="2dp"
+                android:text="@{``+coin.rank,default=`200`}"
+                android:textSize="11sp"
+                android:textStyle="bold"
+                android:textColor="@color/default_text_color"
+                app:layout_constraintBottom_toBottomOf="@+id/view"
+                app:layout_constraintEnd_toStartOf="@+id/guideline3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="@+id/shapeableImageView" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </com.google.android.material.card.MaterialCardView>
+
+
+</layout>

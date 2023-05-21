@@ -2,4 +2,12 @@
     <string name="app_name">CyrptocracyNew</string>
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="reset_search">Re-set Search</string>
+
+    <string-array name="choices">
+        <item>100</item>
+        <item>200</item>
+        <item>300</item>
+        <item>500</item>
+    </string-array>
 </resources>

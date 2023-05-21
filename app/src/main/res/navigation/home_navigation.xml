@@ -8,11 +8,11 @@
     <fragment
         android:id="@+id/coinListingScreen"
         android:name="com.e.cryptocracy.home.ui.fragments.CoinListingScreen"
-        android:label="Coins"
+        android:label="Market"
         tools:layout="@layout/fragment_coin_listing_screen" />
     <fragment
         android:id="@+id/accountScreen"
-        android:name="com.e.cryptocracy.home.ui.fragments.AccountScreen"
+        android:name="com.e.cryptocracy.account.ui.AccountScreen"
         android:label="Account"
         tools:layout="@layout/fragment_account_screen" />
     <fragment
@@ -30,4 +30,85 @@
         android:name="com.e.cryptocracy.home.ui.fragments.SearchScreen"
         android:label="Search"
         tools:layout="@layout/fragment_search_screen" />
+    <fragment
+        android:id="@+id/searchCurrencyScreen"
+        android:name="com.e.cryptocracy.currency.ui.fragments.SearchCurrencyScreen"
+        android:label="Search Currency"
+        tools:layout="@layout/fragment_search_currency_screen" />
+    <action
+        android:id="@+id/action_global_searchCurrencyScreen"
+        app:destination="@id/searchCurrencyScreen"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    <dialog
+        android:id="@+id/timePeriodBottomDialogFragment"
+        android:name="com.e.cryptocracy.home.ui.fragments.TimePeriodBottomDialogFragment"
+        android:label="fragment_time_period_bottom_dialog"
+        tools:layout="@layout/fragment_time_period_bottom_dialog" />
+    <action
+        android:id="@+id/action_global_timePeriodBottomDialogFragment"
+        app:destination="@id/timePeriodBottomDialogFragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    <fragment
+        android:id="@+id/marketSettingFragment"
+        android:name="com.e.cryptocracy.home.ui.fragments.MarketSettingFragment"
+        android:label="Market Setting"
+        tools:layout="@layout/fragment_market_setting" />
+    <action
+        android:id="@+id/action_global_marketSettingFragment"
+        app:destination="@id/marketSettingFragment"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    <fragment
+        android:id="@+id/coinDetailScreen"
+        android:name="com.e.cryptocracy.coinDetail.ui.CoinDetailScreen"
+        android:label="Coin detail"
+        tools:layout="@layout/fragment_coin_detail_screen" />
+    <action
+        android:id="@+id/action_global_coinDetailScreen"
+        app:destination="@id/coinDetailScreen"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    <fragment
+        android:id="@+id/globalStatsScreen"
+        android:name="com.e.cryptocracy.globalStats.ui.GlobalStatsScreen"
+        android:label="Global Stats"
+        tools:layout="@layout/fragment_global_stats_screen" />
+    <action
+        android:id="@+id/action_global_globalStatsScreen"
+        app:destination="@id/globalStatsScreen"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim" />
+    <fragment
+        android:id="@+id/loginScreen"
+        android:name="com.e.cryptocracy.login.ui.LoginScreen"
+        android:label="Login Screen"
+        tools:layout="@layout/fragment_login_screen" />
+    <action
+        android:id="@+id/action_global_loginScreen"
+        app:destination="@id/loginScreen"
+        app:enterAnim="@anim/slide_in_bottom"
+        app:exitAnim="@anim/slide_out_top"
+        app:popEnterAnim="@anim/slide_in_top"
+        app:popExitAnim="@anim/slide_out_bottom"
+        app:popUpTo="@id/coinListingScreen" />
+    <action
+        android:id="@+id/action_global_coinListingScreen"
+        app:destination="@id/coinListingScreen"
+        app:enterAnim="@anim/nav_default_enter_anim"
+        app:exitAnim="@anim/nav_default_exit_anim"
+        app:popEnterAnim="@anim/nav_default_pop_enter_anim"
+        app:popExitAnim="@anim/nav_default_pop_exit_anim"
+        app:popUpTo="@id/coinListingScreen" />
 </navigation>

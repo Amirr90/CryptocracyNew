@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <data>
+
+        <variable
+            name="timePeriod"
+            type="com.e.cryptocracy.home.models.TimePeriod" />
+    </data>
+
+    <com.google.android.material.card.MaterialCardView
+        android:id="@+id/mainTimePeriodView"
+        android:layout_width="100dp"
+        android:layout_margin="10dp"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="12dp"
+        android:checkable="true">
+
+        <TextView
+            android:id="@+id/tvCurrency"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:background="@drawable/round_12dp_search"
+            android:gravity="center"
+            android:paddingHorizontal="10dp"
+            android:paddingVertical="7dp"
+            android:text="@{timePeriod.value,default=`24h`}"
+
+            android:textStyle="bold" />
+    </com.google.android.material.card.MaterialCardView>
+</layout>

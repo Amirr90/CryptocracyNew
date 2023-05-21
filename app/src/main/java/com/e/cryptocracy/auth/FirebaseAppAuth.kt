@@ -3,12 +3,13 @@ package com.e.cryptocracy.auth
 import android.app.Activity.RESULT_OK
 import android.util.Log
 import androidx.appcompat.app.AppCompatActivity
+import androidx.lifecycle.lifecycleScope
 import com.firebase.ui.auth.AuthUI
 import com.firebase.ui.auth.FirebaseAuthUIActivityResultContract
 import com.firebase.ui.auth.data.model.FirebaseAuthUIAuthenticationResult
 import com.google.firebase.auth.FirebaseAuth
 
-class FirebaseAuth(
+class FirebaseAppAuth(
     activity: AppCompatActivity,
 ) {
     fun invoke() {
@@ -27,10 +28,11 @@ class FirebaseAuth(
     )
 
     // Create and launch sign-in intent
-    private val signInIntent = AuthUI.getInstance()
-        .createSignInIntentBuilder()
-        .setAvailableProviders(providers)
-        .build()
+    private val signInIntent =
+        AuthUI.getInstance()
+            .createSignInIntentBuilder()
+            .setAvailableProviders(providers)
+            .build()
 
 
     private fun onSignInResult(result: FirebaseAuthUIAuthenticationResult) {
